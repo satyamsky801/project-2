@@ -1,0 +1,492 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "e8fa3fa600854521589a",
+  "position": {
+    "x": 9.6515250687262721,
+    "y": 0,
+    "z": 0,
+    "height": 720.24505825369806,
+    "width": 1270.3819871710957,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "Policy Number"
+                }
+              },
+              "queryRef": "InsuranceData (1).Policy Number",
+              "nativeQueryRef": "Policy Number"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "CustomerID"
+                }
+              },
+              "queryRef": "InsuranceData (1).CustomerID",
+              "nativeQueryRef": "CustomerID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "ClaimNumber"
+                }
+              },
+              "queryRef": "InsuranceData (1).ClaimNumber",
+              "nativeQueryRef": "ClaimNumber"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "Age"
+                }
+              },
+              "queryRef": "Sum(InsuranceData (1).Age)",
+              "nativeQueryRef": "Age"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "Gender"
+                }
+              },
+              "queryRef": "InsuranceData (1).Gender",
+              "nativeQueryRef": "Gender"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "PremiumAmount"
+                }
+              },
+              "queryRef": "Sum(InsuranceData (1).PremiumAmount)",
+              "nativeQueryRef": "PremiumAmount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "PolicyType"
+                }
+              },
+              "queryRef": "InsuranceData (1).PolicyType",
+              "nativeQueryRef": "PolicyType"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "CoverageAmount"
+                }
+              },
+              "queryRef": "Sum(InsuranceData (1).CoverageAmount)",
+              "nativeQueryRef": "CoverageAmount"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "PolicyEndDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Year"
+                }
+              },
+              "queryRef": "InsuranceData (1).PolicyEndDate.Variation.Date Hierarchy.Year",
+              "nativeQueryRef": "PolicyEndDate Year"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "PolicyEndDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Quarter"
+                }
+              },
+              "queryRef": "InsuranceData (1).PolicyEndDate.Variation.Date Hierarchy.Quarter",
+              "nativeQueryRef": "PolicyEndDate Quarter"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "PolicyEndDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Month"
+                }
+              },
+              "queryRef": "InsuranceData (1).PolicyEndDate.Variation.Date Hierarchy.Month",
+              "nativeQueryRef": "PolicyEndDate Month"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "PolicyEndDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Day"
+                }
+              },
+              "queryRef": "InsuranceData (1).PolicyEndDate.Variation.Date Hierarchy.Day",
+              "nativeQueryRef": "PolicyEndDate Day"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "PolicyStartDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Year"
+                }
+              },
+              "queryRef": "InsuranceData (1).PolicyStartDate.Variation.Date Hierarchy.Year",
+              "nativeQueryRef": "PolicyStartDate Year"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "PolicyStartDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Quarter"
+                }
+              },
+              "queryRef": "InsuranceData (1).PolicyStartDate.Variation.Date Hierarchy.Quarter",
+              "nativeQueryRef": "PolicyStartDate Quarter"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "PolicyStartDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Month"
+                }
+              },
+              "queryRef": "InsuranceData (1).PolicyStartDate.Variation.Date Hierarchy.Month",
+              "nativeQueryRef": "PolicyStartDate Month"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "PolicyStartDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Day"
+                }
+              },
+              "queryRef": "InsuranceData (1).PolicyStartDate.Variation.Date Hierarchy.Day",
+              "nativeQueryRef": "PolicyStartDate Day"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "ClaimDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Year"
+                }
+              },
+              "queryRef": "InsuranceData (1).ClaimDate.Variation.Date Hierarchy.Year",
+              "nativeQueryRef": "ClaimDate Year"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "ClaimDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Quarter"
+                }
+              },
+              "queryRef": "InsuranceData (1).ClaimDate.Variation.Date Hierarchy.Quarter",
+              "nativeQueryRef": "ClaimDate Quarter"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "ClaimDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Month"
+                }
+              },
+              "queryRef": "InsuranceData (1).ClaimDate.Variation.Date Hierarchy.Month",
+              "nativeQueryRef": "ClaimDate Month"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "InsuranceData (1)"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "ClaimDate"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Day"
+                }
+              },
+              "queryRef": "InsuranceData (1).ClaimDate.Variation.Date Hierarchy.Day",
+              "nativeQueryRef": "ClaimDate Day"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "ClaimAmount"
+                }
+              },
+              "queryRef": "Sum(InsuranceData (1).ClaimAmount)",
+              "nativeQueryRef": "ClaimAmount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "ClaimStatus"
+                }
+              },
+              "queryRef": "InsuranceData (1).ClaimStatus",
+              "nativeQueryRef": "ClaimStatus"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "AGE TYPE"
+                }
+              },
+              "queryRef": "InsuranceData (1).AGE TYPE",
+              "nativeQueryRef": "AGE TYPE"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "InsuranceData (1)"
+                    }
+                  },
+                  "Property": "Active/Inactive"
+                }
+              },
+              "queryRef": "InsuranceData (1).Active/Inactive",
+              "nativeQueryRef": "Active/Inactive"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
