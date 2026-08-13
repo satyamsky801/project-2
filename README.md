@@ -1,7 +1,4 @@
-Set-Location "C:\Users\satya\Downloads\project-2"
-
-@"
-# Project 2 - Insurance Data Analysis Dashboard
+﻿# Project 2 - Insurance Data Analysis Dashboard
 
 ## Overview
 
@@ -15,37 +12,37 @@ The dashboard provides a clear view of insurance performance and helps identify 
 
 ### Insurance Dashboard
 
-![Insurance Dashboard](assets/dashboard-1.png)
+<img src="https://raw.githubusercontent.com/satyamsky801/project-2/main/assets/insurance-dashboard.png" width="100%">
 
 ### Insurance Data View
 
-![Insurance Data View](assets/dashboard-2.png)
+<img src="https://raw.githubusercontent.com/satyamsky801/project-2/main/assets/insurance-data-view.png" width="100%">
 
 ---
 
 ## Key Features
 
-- Policy analysis
-- Customer analysis
-- Premium Amount analysis
-- Coverage Amount analysis
-- Claim Amount analysis
-- Claim Status analysis
-- Active vs Inactive policy analysis
-- Gender-wise customer analysis
-- Policy Type analysis
-- Age-group analysis
-- Interactive filters and slicers
-- DAX measures
-- Data modeling
-- Interactive data visualization
+* Policy analysis
+* Customer analysis
+* Premium Amount analysis
+* Coverage Amount analysis
+* Claim Amount analysis
+* Claim Status analysis
+* Active vs Inactive policy analysis
+* Gender-wise customer analysis
+* Policy Type analysis
+* Age-group analysis
+* Interactive filters and slicers
+* DAX measures
+* Data modeling
+* Interactive data visualization
 
 ---
 
 ## Key KPIs
 
 | KPI | Description |
-|---|---|
+| --- | --- |
 | Premium Amount | Total premium generated |
 | Coverage Amount | Total insurance coverage |
 | Claim Amount | Total claim amount |
@@ -59,13 +56,13 @@ The dashboard provides a clear view of insurance performance and helps identify 
 
 ### Premium Amount by Policy Type
 
-The dashboard compares premium amounts across different insurance policy types such as:
+The dashboard compares premium amounts across different insurance policy types:
 
-- Travel
-- Health
-- Auto
-- Life
-- Home
+* Travel
+* Health
+* Auto
+* Life
+* Home
 
 ### Active vs Inactive Policies
 
@@ -75,42 +72,34 @@ The dashboard provides a comparison between active and inactive insurance polici
 
 Claims are analyzed based on their status:
 
-- Pending
-- Rejected
-- Settled
+* Pending
+* Rejected
+* Settled
 
 ### Customer Demographics
 
 Customer information is analyzed using:
 
-- Gender
-- Age group
-- Customer ID
-- Policy information
+* Gender
+* Age group
+* Customer ID
+* Policy information
 
 ---
 
 ## Tools & Technologies
 
-- Power BI
-- DAX
-- Power Query
-- Data Modeling
-- Data Visualization
+* Power BI
+* DAX
+* Power Query
+* Data Modeling
+* Data Visualization
 
 ---
 
-## Project Structure
+## How to Open
 
-```text
-project-2/
-│
-├── assets/
-│   ├── dashboard-1.png
-│   └── dashboard-2.png
-│
-├── PROJECT 2 INSURANCE DATA.pbip
-├── PROJECT 2 INSURANCE DATA.Report/
-├── PROJECT 2 INSURANCE DATA.SemanticModel/
-├── .gitignore
-└── README.md
+1. Clone this repository to your local machine.
+2. Open PROJECT 2 INSURANCE DATA.pbip using Power BI Desktop.
+3. Refresh the data if required.
+4. Explore the interactive dashboard.
